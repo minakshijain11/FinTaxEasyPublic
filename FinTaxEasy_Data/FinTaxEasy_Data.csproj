@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{48037B91-D753-40DA-A91B-714B0028E3CD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FinTaxEasy_Data</RootNamespace>
+    <AssemblyName>FinTaxEasy_Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Model\Address.cs">
+      <DependentUpon>FinTaxEasyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\City.cs">
+      <DependentUpon>FinTaxEasyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Country.cs">
+      <DependentUpon>FinTaxEasyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Currency.cs">
+      <DependentUpon>FinTaxEasyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Document.cs">
+      <DependentUpon>FinTaxEasyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\FinTaxEasyModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FinTaxEasyModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\FinTaxEasyModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FinTaxEasyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\FinTaxEasyModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FinTaxEasyModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Privilege.cs">
+      <DependentUpon>FinTaxEasyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\RegisteredUser.cs">
+      <DependentUpon>FinTaxEasyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Role.cs">
+      <DependentUpon>FinTaxEasyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\State.cs">
+      <DependentUpon>FinTaxEasyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UserDetail.cs">
+      <DependentUpon>FinTaxEasyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UserDocument.cs">
+      <DependentUpon>FinTaxEasyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UserPrivilege.cs">
+      <DependentUpon>FinTaxEasyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="Model\FinTaxEasyModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>FinTaxEasyModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model\FinTaxEasyModel.edmx.diagram">
+      <DependentUpon>FinTaxEasyModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\FinTaxEasyModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>FinTaxEasyModel.edmx</DependentUpon>
+      <LastGenOutput>FinTaxEasyModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model\FinTaxEasyModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>FinTaxEasyModel.edmx</DependentUpon>
+      <LastGenOutput>FinTaxEasyModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

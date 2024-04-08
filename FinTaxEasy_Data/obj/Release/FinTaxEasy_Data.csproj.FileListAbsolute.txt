@@ -1,0 +1,8 @@
+C:\Users\User\Fintaxeasy\FinTaxEasyApp\FinTaxEasy_Data\bin\Release\FinTaxEasy_Data.dll.config
+C:\Users\User\Fintaxeasy\FinTaxEasyApp\FinTaxEasy_Data\bin\Release\FinTaxEasy_Data.dll
+C:\Users\User\Fintaxeasy\FinTaxEasyApp\FinTaxEasy_Data\bin\Release\FinTaxEasy_Data.pdb
+C:\Users\User\Fintaxeasy\FinTaxEasyApp\FinTaxEasy_Data\bin\Release\EntityFramework.dll
+C:\Users\User\Fintaxeasy\FinTaxEasyApp\FinTaxEasy_Data\bin\Release\EntityFramework.xml
+C:\Users\User\Fintaxeasy\FinTaxEasyApp\FinTaxEasy_Data\obj\Release\FinTaxEasy_Data.csprojResolveAssemblyReference.cache
+C:\Users\User\Fintaxeasy\FinTaxEasyApp\FinTaxEasy_Data\obj\Release\FinTaxEasy_Data.dll
+C:\Users\User\Fintaxeasy\FinTaxEasyApp\FinTaxEasy_Data\obj\Release\FinTaxEasy_Data.pdb
